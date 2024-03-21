@@ -20,8 +20,9 @@ export default function RootLayout({
     <RecoilRootWrapper>
       <html lang="en">
         <body className={inter.className}>
-          <div>
-              {children}
+          <div className="flex flex-col justify-start p-24 min-h-screen bg-400% bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 animate-gradient-moving">
+            <Header/>
+            {children}
           </div>
         </body>
       </html>

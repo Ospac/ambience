@@ -5,9 +5,8 @@ import TitleList from "./ui/titleList";
 export default function Home() {
 
   return (
-    <main className="flex flex-col justify-start p-24 min-h-screen bg-400% bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 animate-gradient-moving">
-      <Header/>
-      <div className=''>
+    <main>
+      <div>
           <TitleList/>
       </div>
     </main>

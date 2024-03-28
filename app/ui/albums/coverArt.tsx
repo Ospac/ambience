@@ -5,9 +5,25 @@ export interface coverArtProps{
     album: albumType,
     index: number,
 }
+const containerWidth = 650;
+const widthClassName : {[key : string]: string} = {
+    2: `w-[325px]`,
+    3: `w-[216px]`,
+    4: `w-[162px]`,
+    5: `w-[130px]`,
+    6: `w-[108px]`,
+}
+const heightClassName : {[key : string]: string} = {
+    2: `h-[325px]`,
+    3: `h-[216px]`,
+    4: `h-[162px]`,
+    5: `h-[130px]`,
+    6: `h-[108px]`,
+}
+
 export default function CoverArt({size, album, index} : coverArtProps){
     return <div 
-        className="bg-cover bg-center hover:opacity-50 w-9 h-9 bg-slate-500 bg-opacity-10"
+        className={`bg-cover bg-center hover:opacity-50 ${widthClassName[size]} ${heightClassName[size]} bg-slate-500 rounded-md`}
     >
     </div>
     

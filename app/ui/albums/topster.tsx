@@ -1,18 +1,19 @@
-'use client'
-import { albumListState, albumsPageSettingState } from "@/app/atoms/albumListAtom";
+import { allAlbumListState, albumsPageSettingState } from "@/app/atoms/albumListAtom";
 import { useRecoilState } from "recoil"
 import CoverArt from "./coverArt";
+import { albumListType } from "@/app/types/albumTypes";
 interface TopsterProps{
-    size : number,
-    index : number,
+    albumList : albumListType
 }
-export default function Topster({size, index} : TopsterProps){
-    const [albumList, setAlbumlist] = useRecoilState(albumListState);
+export default function Topster({ albumList } : TopsterProps){
+    const size = albumList.size;
     return <div
-        className=" flex flex-row flex-wrap gap-1 w-[650px] h-[600px]"
+        className="flex flex-row flex-wrap gap-1 w-[660px] h-[660px]"
     >{
-        albumList[index]?.contents.map((album, albumIndex) => 
-        <CoverArt key={albumIndex} size={size} album={album} index={albumIndex}/>
+        albumList?.contents.map((album, albumIndex) => {
+            if(albumIndex >= size * size) return null;
+            return <CoverArt key={albumIndex} size={size} album={album} index={albumIndex}/>
+        }
     )}
     </div>
 }

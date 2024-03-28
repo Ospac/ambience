@@ -4,7 +4,7 @@ import { albumListType, albumsPageSettingType } from "../types/albumTypes";
 
 const { persistAtom } = recoilPersist();
 
-export const albumListState = atom<albumListType[]>({
+export const allAlbumListState = atom<albumListType[]>({
     key: "albumList",
     effects_UNSTABLE: [persistAtom],
     default: []

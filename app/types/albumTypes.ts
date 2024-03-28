@@ -11,6 +11,7 @@ export interface albumType {
 export interface albumListType {
     title: string,
     id: string,
+    size: number,
     contents: albumType[],
 }
 

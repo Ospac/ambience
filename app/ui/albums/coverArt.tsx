@@ -10,15 +10,20 @@ const widthClassName : {[key : string]: string} = {
     2: `w-[325px]`,
     3: `w-[216px]`,
     4: `w-[162px]`,
-    5: `w-[130px]`,
-    6: `w-[108px]`,
+    5: `w-[127px]`,
+    6: `w-[105px]`,
+    7: `w-[86px]`,
+    8: `w-[75px]`,
+
 }
 const heightClassName : {[key : string]: string} = {
     2: `h-[325px]`,
     3: `h-[216px]`,
     4: `h-[162px]`,
-    5: `h-[130px]`,
-    6: `h-[108px]`,
+    5: `h-[127px]`,
+    6: `h-[105px]`,
+    7: `h-[86px]`,
+    8: `h-[75px]`,
 }
 
 export default function CoverArt({size, album, index} : coverArtProps){

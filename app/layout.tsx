@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./ui/header";
 import { RecoilRootWrapper } from "./lib/recoilRootWrapper";
+import Search from "./ui/Search";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <div className="flex flex-col justify-start p-24 min-h-screen bg-400% bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 animate-gradient-moving">
-            <Header/>
+            <Header />
             {children}
           </div>
         </body>

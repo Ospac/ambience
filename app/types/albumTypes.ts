@@ -16,7 +16,6 @@ export interface albumListType {
 }
 
 export interface albumsPageSettingType{
-    size: number,
     topsterId: number,
     isSearchMode: boolean,
     isTopsterMode: boolean,

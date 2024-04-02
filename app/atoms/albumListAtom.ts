@@ -14,8 +14,11 @@ export const albumsPageSettingState = atom<albumsPageSettingType>({
     effects_UNSTABLE: [persistAtom],
     default:{
       topsterId: 0,
-      isSearchMode: false,
       isTopsterMode: true,
       isListMode: false,
     }
   })
+export const isSearchState = atom({
+  key: "isSearch",
+  default: false,
+})

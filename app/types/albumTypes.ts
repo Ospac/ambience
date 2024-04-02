@@ -17,7 +17,6 @@ export interface albumListType {
 
 export interface albumsPageSettingType{
     topsterId: number,
-    isSearchMode: boolean,
     isTopsterMode: boolean,
     isListMode : boolean,
 }

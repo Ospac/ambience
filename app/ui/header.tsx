@@ -1,12 +1,8 @@
 import Link from "next/link"
-import Search from "./Search";
 
 export default function Header(){
-    const isSearch = true;
     return <div>
     {
-        isSearch? <Search /> 
-        :
         <nav className="flex flex-row justify-between items-center max-h-48 text-sm py-8 backdrop-blur-md text-stone-800">
             <h1 className="font-normal text-lg"><Link href={'/'}>AMBIENCE</Link></h1>
             <div className="flex flex-row justify-between px-12 gap-3">

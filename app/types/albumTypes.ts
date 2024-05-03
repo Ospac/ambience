@@ -1,6 +1,7 @@
 export interface albumType {
-    title: string,
+    name: string,
     artist: string,
+    url: string,
     image: {
         [index : number] : {
             "#text": string,

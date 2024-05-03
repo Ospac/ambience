@@ -26,8 +26,9 @@ export default function TitleList(){
           id: newId,
           size: 3,
           contents: Array(64).fill(0).map(() => ({
-              title: "",
+                name: "",
                 artist: "",
+                url: "",
                 image: [],
             })),
         })

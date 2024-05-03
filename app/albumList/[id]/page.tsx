@@ -4,7 +4,7 @@ import Topster from "@/app/ui/albums/topster";
 import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
-import Search from "@/app/ui/search";
+import Search from "@/app/ui/albums/search";
 import { Buttons } from "@/app/ui/albums/buttons";
 
 

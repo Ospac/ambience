@@ -9,7 +9,7 @@ export default function Topster({ topster } : TopsterProps){
     const size = topster.size;
     const [albumPageSetting, setAlbumPageSetting] = useRecoilState(albumsPageSettingState);
     return <div
-        className="flex flex-row flex-wrap justify-center gap-1 w-full h-full"
+        className="flex flex-row flex-wrap justify-start gap-1  h-full w-[660px]"
     >{
         topster?.contents.map((album, albumIndex) => {
             if(albumIndex >= size * size) return null;
